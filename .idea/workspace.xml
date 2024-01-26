@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Added in an apple image and drew a box around the invisible borders to see the hitbox.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Drawing a line and a series of lines that forms an N.&#10;&#10;Drawing ellipses and arcs.">
       <change beforePath="$PROJECT_DIR$/Pygame Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pygame Project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706243620687</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Drawing a line and a series of lines that forms an N.&#10;&#10;Drawing ellipses and arcs.">
+      <option name="closed" value="true" />
+      <created>1706244669686</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706244669686</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,6 +134,7 @@
     <MESSAGE value="A little rectangle fun.&#10;&#10;Created defined variables for the background width/height for easier use later." />
     <MESSAGE value="Tested out drawing a circle, rectangle, and triangle. All" />
     <MESSAGE value="Added in an apple image and drew a box around the invisible borders to see the hitbox." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in an apple image and drew a box around the invisible borders to see the hitbox." />
+    <MESSAGE value="Drawing a line and a series of lines that forms an N.&#10;&#10;Drawing ellipses and arcs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Drawing a line and a series of lines that forms an N.&#10;&#10;Drawing ellipses and arcs." />
   </component>
 </project>

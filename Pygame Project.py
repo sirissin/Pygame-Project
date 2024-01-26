@@ -27,8 +27,12 @@ apple_rect = apple.get_rect()
 apple_rect.x = 50
 apple_rect.y = 100
 
-# Creating shapes and their parameters
-rect = pygame.Rect(50, 10, 200, 100)
+# Creating shapes and their parameters (the rect transformations are unique to rects)
+rect = pygame.Rect(100, 50, 100, 100)
+# rect = rect.move(-50, 50)
+# rect = rect.inflate(100, 100)
+# rect = rect.inflate(-75, -75)
+rect.update(50, 100, 200, 150)
 triangle_coordinates = [(100, 50), (125, 100), (75, 100)]
 
 # Looking for the user closing the game
@@ -62,6 +66,8 @@ while True:
     # pygame.draw.rect(screen, "black", pygame.Rect(50, 50, 100, 200), 1)
     # pygame.draw.ellipse(screen, "green", pygame.Rect(50, 50, 100, 200)
     # pygame.draw.arc(screen, "purple", pygame.Rect(50, 50, 100, 100), 0, math.pi, 5)
+
+    pygame.draw.rect(screen, "blue", rect)
 
     # Refreshing screen
     pygame.display.flip()
