@@ -22,11 +22,11 @@ purple = pygame.Color(255, 0, 255, 1)
 background_color = white
 
 # Defining the plumber image
-apple = pygame.image.load("apple.png")
-apple_rect = apple.get_rect()
-apple_rect = apple_rect.move(100, 100)
-apple = pygame.transform.scale(apple, (200, 200))
-apple = pygame.transform.rotate(apple, 180)
+# apple = pygame.image.load("apple.png")
+# apple_rect = apple.get_rect()
+# apple_rect = apple_rect.move(50, 50)
+# apple = pygame.transform.scale(apple, (200, 200))
+# apple = pygame.transform.rotate(apple, 180)
 
 # Creating shapes and their parameters (the rect transformations are unique to rects)
 rect = pygame.Rect(100, 50, 100, 100)
@@ -35,6 +35,8 @@ rect = pygame.Rect(100, 50, 100, 100)
 # rect = rect.inflate(-75, -75)
 rect.update(50, 100, 200, 150)
 triangle_coordinates = [(100, 50), (125, 100), (75, 100)]
+circle_x = 50
+circle_y = 50
 
 # Looking for the user closing the game
 while True:
@@ -57,7 +59,13 @@ while True:
 
     # Border for image if there was no background, and image created
     # pygame.draw.rect(screen, "black", apple_rect, 1)
-    screen.blit(apple, apple_rect)
+    # apple_rect = apple_rect.move(1, 1)
+    # screen.blit(apple, apple_rect)
+
+    # Moving a circle
+    circle_x += 1
+    circle_y += 1
+    pygame.draw.circle(screen, "red", (circle_x, circle_y), 50)
 
     # Drawing lines
     # pygame.draw.line(screen, "black", (50, 50), (200, 100), 5)
