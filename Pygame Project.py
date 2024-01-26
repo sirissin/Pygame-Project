@@ -24,8 +24,9 @@ background_color = white
 # Defining the plumber image
 apple = pygame.image.load("apple.png")
 apple_rect = apple.get_rect()
-apple_rect.x = 50
-apple_rect.y = 100
+apple_rect = apple_rect.move(100, 100)
+apple = pygame.transform.scale(apple, (200, 200))
+apple = pygame.transform.rotate(apple, 180)
 
 # Creating shapes and their parameters (the rect transformations are unique to rects)
 rect = pygame.Rect(100, 50, 100, 100)
@@ -56,7 +57,7 @@ while True:
 
     # Border for image if there was no background, and image created
     # pygame.draw.rect(screen, "black", apple_rect, 1)
-    # screen.blit(apple, apple_rect)
+    screen.blit(apple, apple_rect)
 
     # Drawing lines
     # pygame.draw.line(screen, "black", (50, 50), (200, 100), 5)
@@ -67,7 +68,7 @@ while True:
     # pygame.draw.ellipse(screen, "green", pygame.Rect(50, 50, 100, 200)
     # pygame.draw.arc(screen, "purple", pygame.Rect(50, 50, 100, 100), 0, math.pi, 5)
 
-    pygame.draw.rect(screen, "blue", rect)
+    # pygame.draw.rect(screen, "blue", rect)
 
     # Refreshing screen
     pygame.display.flip()
