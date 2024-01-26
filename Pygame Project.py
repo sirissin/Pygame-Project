@@ -22,11 +22,20 @@ purple = pygame.Color(255, 0, 255, 1)
 background_color = white
 
 # Defining the plumber image
-# apple = pygame.image.load("apple.png")
-# apple_rect = apple.get_rect()
-# apple_rect = apple_rect.move(50, 50)
+apple = pygame.image.load("apple.png")
+apple_rect = apple.get_rect()
+apple_rect = apple_rect.move(10, 10)
 # apple = pygame.transform.scale(apple, (200, 200))
 # apple = pygame.transform.rotate(apple, 180)
+
+# Have the dimensions of the screen for tracking purposes
+screen_rect = screen.get_rect()
+
+
+# Defining how the collision detection works
+def check_for_collision():
+    return apple_rect.x <= 0 or apple_rect.x + apple_rect.width >= screen_rect.width or apple_rect.y <= 0 or apple_rect.y + apple_rect.height >= screen_rect.height
+
 
 # Creating shapes and their parameters (the rect transformations are unique to rects)
 rect = pygame.Rect(100, 50, 100, 100)
@@ -59,13 +68,18 @@ while True:
 
     # Border for image if there was no background, and image created
     # pygame.draw.rect(screen, "black", apple_rect, 1)
-    # apple_rect = apple_rect.move(1, 1)
-    # screen.blit(apple, apple_rect)
+
+    # Checking for collision between image and screen edge
+    if not check_for_collision():
+        apple_rect = apple_rect.move(0, 1)
+
+    screen.blit(apple, apple_rect)
+
 
     # Moving a circle
-    circle_x += 1
-    circle_y += 1
-    pygame.draw.circle(screen, "red", (circle_x, circle_y), 50)
+    # circle_x += 1
+    # circle_y += 1
+    # pygame.draw.circle(screen, "red", (circle_x, circle_y), 50)
 
     # Drawing lines
     # pygame.draw.line(screen, "black", (50, 50), (200, 100), 5)

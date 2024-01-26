@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Some simple transformations to the apple image.">
+    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Added some movement functionality to the apple and a circle.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pygame Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pygame Project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706285531413</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added some movement functionality to the apple and a circle.">
+      <option name="closed" value="true" />
+      <created>1706286039738</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706286039738</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -153,6 +162,7 @@
     <MESSAGE value="Drawing a line and a series of lines that forms an N.&#10;&#10;Drawing ellipses and arcs." />
     <MESSAGE value="Moving and inflating a rectangle." />
     <MESSAGE value="Some simple transformations to the apple image." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some simple transformations to the apple image." />
+    <MESSAGE value="Added some movement functionality to the apple and a circle." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some movement functionality to the apple and a circle." />
   </component>
 </project>
