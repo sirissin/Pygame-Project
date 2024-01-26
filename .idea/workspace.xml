@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="A little rectangle fun.&#10;&#10;Created defined variables for the background width/height for easier use later.">
+    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Tested out drawing a circle, rectangle, and triangle. All">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pygame Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pygame Project.py" afterDir="false" />
     </list>
@@ -39,6 +39,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Pygame Project" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -95,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706240931974</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tested out drawing a circle, rectangle, and triangle. All">
+      <option name="closed" value="true" />
+      <created>1706242053612</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706242053612</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -104,6 +117,7 @@
     <MESSAGE value="Set window size and name.&#10;&#10;Set frame rate and background color." />
     <MESSAGE value="Defining colors." />
     <MESSAGE value="A little rectangle fun.&#10;&#10;Created defined variables for the background width/height for easier use later." />
-    <option name="LAST_COMMIT_MESSAGE" value="A little rectangle fun.&#10;&#10;Created defined variables for the background width/height for easier use later." />
+    <MESSAGE value="Tested out drawing a circle, rectangle, and triangle. All" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested out drawing a circle, rectangle, and triangle. All" />
   </component>
 </project>

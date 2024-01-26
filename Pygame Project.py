@@ -21,6 +21,12 @@ purple = pygame.Color(255, 0, 255, 1)
 # Defined colors for specific uses
 background_color = white
 
+# Defining the plumber image
+apple = pygame.image.load("apple.png")
+apple_rect = apple.get_rect()
+apple_rect.x = 50
+apple_rect.y = 100
+
 # Creating shapes and their parameters
 rect = pygame.Rect(50, 10, 200, 100)
 triangle_coordinates = [(100, 50), (125, 100), (75, 100)]
@@ -43,6 +49,10 @@ while True:
 
     # Drawing a polygon, specifically a triangle
     # pygame.draw.polygon(screen, "green", triangle_coordinates)
+
+    # Border for image if there was no background, and image created
+    pygame.draw.rect(screen, "black", apple_rect, 1)
+    screen.blit(apple, apple_rect)
 
     # Refreshing screen
     pygame.display.flip()
