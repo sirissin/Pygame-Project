@@ -22,29 +22,29 @@ purple = pygame.Color(255, 0, 255, 1)
 background_color = white
 
 # Defining the plumber image
-apple = pygame.image.load("apple.png")
-apple_rect = apple.get_rect()
-apple_rect = apple_rect.move(10, 10)
+# apple = pygame.image.load("apple.png")
+# apple_rect = apple.get_rect()
+# apple_rect = apple_rect.move(10, 10)
 # apple = pygame.transform.scale(apple, (200, 200))
 # apple = pygame.transform.rotate(apple, 180)
 
 # Have the dimensions of the screen for tracking purposes
 screen_rect = screen.get_rect()
 
-point = (150, 15)
+# point = (150, 15)
 
-obstacle = pygame.Rect(0, 200, 100, 10)
+# obstacle = pygame.Rect(0, 200, 100, 10)
 
 
 # Defining how the collision detection works
-def check_for_collision():
-    if apple_rect.x <= 0 or apple_rect.x + apple_rect.width >= screen_rect.width or apple_rect.y <= 0 or apple_rect.y + apple_rect.height >= screen_rect.height:
-        return True
-    if apple_rect.colliderect(obstacle):
-        return True
-    if apple_rect.collidepoint(point[0], point[1]):
-        return True
-    return False
+# def check_for_collision():
+    # if apple_rect.x <= 0 or apple_rect.x + apple_rect.width >= screen_rect.width or apple_rect.y <= 0 or apple_rect.y + apple_rect.height >= screen_rect.height:
+        # return True
+    # if apple_rect.colliderect(obstacle):
+        # return True
+    # if apple_rect.collidepoint(point[0], point[1]):
+        # return True
+    # return False
 
 
 # Creating shapes and their parameters (the rect transformations are unique to rects)
@@ -54,8 +54,8 @@ rect = pygame.Rect(100, 50, 100, 100)
 # rect = rect.inflate(-75, -75)
 rect.update(50, 100, 200, 150)
 triangle_coordinates = [(100, 50), (125, 100), (75, 100)]
-circle_x = 50
-circle_y = 50
+circle_x = None
+circle_y = None
 
 # Looking for the user closing the game
 while True:
@@ -63,9 +63,18 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            pos = pygame.mouse.get_pos()
+            circle_x = pos[0]
+            circle_y = pos[1]
+        if event.type == pygame.MOUSEBUTTONUP:
+            print("Mouse up")
 
     # Screen color
     screen.fill(background_color)
+
+    if circle_x != None and circle_y != None:
+        pygame.draw.circle(screen, "green", (circle_x, circle_y), 25)
 
     # Drawing a rectangle and changing its properties (coordinates are for top right corner)
     # pygame.draw.rect(screen, red, rect, 5, 20)
@@ -80,11 +89,11 @@ while True:
     # pygame.draw.rect(screen, "black", apple_rect, 1)
 
     # Checking for collision between image and screen edge
-    if not check_for_collision():
-        apple_rect = apple_rect.move(1, 0)
+    # if not check_for_collision():
+        # apple_rect = apple_rect.move(1, 0)
 
-    pygame.draw.rect(screen, "red", obstacle)
-    screen.blit(apple, apple_rect)
+    # pygame.draw.rect(screen, "red", obstacle)
+    # screen.blit(apple, apple_rect)
 
 
     # Moving a circle

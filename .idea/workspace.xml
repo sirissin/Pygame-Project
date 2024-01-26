@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Added collision detection for the apple image.">
+    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Added point and rect collision">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pygame Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pygame Project.py" afterDir="false" />
     </list>
@@ -156,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706286998324</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added point and rect collision">
+      <option name="closed" value="true" />
+      <created>1706287610369</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706287610369</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,6 +180,7 @@
     <MESSAGE value="Some simple transformations to the apple image." />
     <MESSAGE value="Added some movement functionality to the apple and a circle." />
     <MESSAGE value="Added collision detection for the apple image." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added collision detection for the apple image." />
+    <MESSAGE value="Added point and rect collision" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added point and rect collision" />
   </component>
 </project>
