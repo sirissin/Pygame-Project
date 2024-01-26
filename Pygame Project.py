@@ -1,4 +1,4 @@
-import pygame, sys
+import pygame, sys, math
 
 # Setup of pygame library
 pygame.init()
@@ -51,8 +51,17 @@ while True:
     # pygame.draw.polygon(screen, "green", triangle_coordinates)
 
     # Border for image if there was no background, and image created
-    pygame.draw.rect(screen, "black", apple_rect, 1)
-    screen.blit(apple, apple_rect)
+    # pygame.draw.rect(screen, "black", apple_rect, 1)
+    # screen.blit(apple, apple_rect)
+
+    # Drawing lines
+    # pygame.draw.line(screen, "black", (50, 50), (200, 100), 5)
+    # pygame.draw.lines(screen, "blue", False, [(50, 250), (50, 50), (250, 250), (250, 50)], 5)
+
+    # Drawing ellipses and arc
+    # pygame.draw.rect(screen, "black", pygame.Rect(50, 50, 100, 200), 1)
+    # pygame.draw.ellipse(screen, "green", pygame.Rect(50, 50, 100, 200)
+    # pygame.draw.arc(screen, "purple", pygame.Rect(50, 50, 100, 100), 0, math.pi, 5)
 
     # Refreshing screen
     pygame.display.flip()

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Tested out drawing a circle, rectangle, and triangle. All">
+    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Added in an apple image and drew a box around the invisible borders to see the hitbox.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pygame Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pygame Project.py" afterDir="false" />
     </list>
@@ -108,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706242053612</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added in an apple image and drew a box around the invisible borders to see the hitbox.">
+      <option name="closed" value="true" />
+      <created>1706243620687</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706243620687</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -118,6 +126,7 @@
     <MESSAGE value="Defining colors." />
     <MESSAGE value="A little rectangle fun.&#10;&#10;Created defined variables for the background width/height for easier use later." />
     <MESSAGE value="Tested out drawing a circle, rectangle, and triangle. All" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tested out drawing a circle, rectangle, and triangle. All" />
+    <MESSAGE value="Added in an apple image and drew a box around the invisible borders to see the hitbox." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added in an apple image and drew a box around the invisible borders to see the hitbox." />
   </component>
 </project>
