@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Defining colors.">
+    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="A little rectangle fun.&#10;&#10;Created defined variables for the background width/height for easier use later.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pygame Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pygame Project.py" afterDir="false" />
     </list>
@@ -87,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706240035372</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="A little rectangle fun.&#10;&#10;Created defined variables for the background width/height for easier use later.">
+      <option name="closed" value="true" />
+      <created>1706240931974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706240931974</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -95,6 +103,7 @@
     <MESSAGE value="Laying out the basics of pygame" />
     <MESSAGE value="Set window size and name.&#10;&#10;Set frame rate and background color." />
     <MESSAGE value="Defining colors." />
-    <option name="LAST_COMMIT_MESSAGE" value="Defining colors." />
+    <MESSAGE value="A little rectangle fun.&#10;&#10;Created defined variables for the background width/height for easier use later." />
+    <option name="LAST_COMMIT_MESSAGE" value="A little rectangle fun.&#10;&#10;Created defined variables for the background width/height for easier use later." />
   </component>
 </project>
