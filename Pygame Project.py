@@ -54,8 +54,8 @@ rect = pygame.Rect(100, 50, 100, 100)
 # rect = rect.inflate(-75, -75)
 rect.update(50, 100, 200, 150)
 triangle_coordinates = [(100, 50), (125, 100), (75, 100)]
-circle_x = None
-circle_y = None
+circle_x = 50
+circle_y = 50
 
 # Looking for the user closing the game
 while True:
@@ -63,18 +63,32 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-        if event.type == pygame.MOUSEBUTTONDOWN:
-            pos = pygame.mouse.get_pos()
-            circle_x = pos[0]
-            circle_y = pos[1]
-        if event.type == pygame.MOUSEBUTTONUP:
-            print("Mouse up")
+        # if event.type == pygame.KEYDOWN:
+            # if event.key == pygame.K_LEFT:
+                # print("Key down")
+        # if event.type == pygame.KEYUP:
+            # print("Key up")
+        # if event.type == pygame.MOUSEBUTTONDOWN:
+            # pos = pygame.mouse.get_pos()
+            # circle_x = pos[0]
+            # circle_y = pos[1]
+        # if event.type == pygame.MOUSEBUTTONUP:
+            # print("Mouse up")
+
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        circle_x -= 1
+    if keys[pygame.K_RIGHT]:
+        circle_x += 1
+    if keys[pygame.K_UP]:
+        circle_y -= 1
+    if keys[pygame.K_DOWN]:
+        circle_y += 1
 
     # Screen color
     screen.fill(background_color)
 
-    if circle_x != None and circle_y != None:
-        pygame.draw.circle(screen, "green", (circle_x, circle_y), 25)
+    pygame.draw.circle(screen, "green", (circle_x, circle_y), 25)
 
     # Drawing a rectangle and changing its properties (coordinates are for top right corner)
     # pygame.draw.rect(screen, red, rect, 5, 20)
