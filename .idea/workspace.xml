@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Laying out the basics of pygame">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="61d6e90d-8a54-446b-8582-acf84ba264ca" name="Changes" comment="Set window size and name.&#10;&#10;Set frame rate and background color.">
       <change beforePath="$PROJECT_DIR$/Pygame Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pygame Project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,12 +70,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706218025226</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Set window size and name.&#10;&#10;Set frame rate and background color.">
+      <option name="closed" value="true" />
+      <created>1706239551864</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706239551864</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic upload to start" />
     <MESSAGE value="Laying out the basics of pygame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laying out the basics of pygame" />
+    <MESSAGE value="Set window size and name.&#10;&#10;Set frame rate and background color." />
+    <option name="LAST_COMMIT_MESSAGE" value="Set window size and name.&#10;&#10;Set frame rate and background color." />
   </component>
 </project>
