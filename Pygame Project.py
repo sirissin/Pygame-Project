@@ -31,10 +31,20 @@ apple_rect = apple_rect.move(10, 10)
 # Have the dimensions of the screen for tracking purposes
 screen_rect = screen.get_rect()
 
+point = (150, 15)
+
+obstacle = pygame.Rect(0, 200, 100, 10)
+
 
 # Defining how the collision detection works
 def check_for_collision():
-    return apple_rect.x <= 0 or apple_rect.x + apple_rect.width >= screen_rect.width or apple_rect.y <= 0 or apple_rect.y + apple_rect.height >= screen_rect.height
+    if apple_rect.x <= 0 or apple_rect.x + apple_rect.width >= screen_rect.width or apple_rect.y <= 0 or apple_rect.y + apple_rect.height >= screen_rect.height:
+        return True
+    if apple_rect.colliderect(obstacle):
+        return True
+    if apple_rect.collidepoint(point[0], point[1]):
+        return True
+    return False
 
 
 # Creating shapes and their parameters (the rect transformations are unique to rects)
@@ -71,8 +81,9 @@ while True:
 
     # Checking for collision between image and screen edge
     if not check_for_collision():
-        apple_rect = apple_rect.move(0, 1)
+        apple_rect = apple_rect.move(1, 0)
 
+    pygame.draw.rect(screen, "red", obstacle)
     screen.blit(apple, apple_rect)
 
 
